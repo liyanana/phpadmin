@@ -29,7 +29,7 @@ if(!isset($_SESSION['login'])){
     <div class="leftnav-title"><strong><span class="icon-list"></span>菜单列表</strong></div>
     <h2><span class="icon-user"></span>基本设置</h2>
     <ul style="display:block">
-        <li><a href="info.html" target="right"><span class="icon-caret-right"></span>网站设置</a></li>
+        <!-- <li><a href="info.php" target="right"><span class="icon-caret-right"></span>订单统计</a></li> -->
         <li><a href="pass.php" target="right"><span class="icon-caret-right"></span>修改密码</a></li>
         <li><a href="banner.php" target="right"><span class="icon-caret-right"></span>首页轮播</a></li>
         <li><a href="cate.php" target="right"><span class="icon-caret-right"></span>分类管理</a></li>
@@ -52,10 +52,10 @@ if(!isset($_SESSION['login'])){
 </script>
 <ul class="bread">
     <li><a href="{:U('Index/info')}" target="right" class="icon-home"> 首页</a></li>
-    <li><a href="##" id="a_leader_txt">网站信息</a></li>
+    <li><a href="##" id="a_leader_txt">home</a></li>
 </ul>
 <div class="admin">
-    <iframe scrolling="auto" rameborder="0" src="info.html" name="right" width="100%" height="100%"></iframe>
+    <iframe scrolling="auto" rameborder="0" src="home.html" name="right" width="100%" height="100%"></iframe>
 </div>
 
 </body>

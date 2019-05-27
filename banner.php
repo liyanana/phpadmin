@@ -20,7 +20,7 @@ $data=$r->fetch_all(MYSQLI_ASSOC);//获取数据集
 </head>
 <body>
 <div class="panel admin-panel">
-    <div class="panel-head"><strong class="icon-reorder"> 内容列表</strong></div>
+    <div class="panel-head"><strong class="icon-reorder"> banner列表</strong></div>
     <div class="padding border-bottom">
         <button type="button" class="button border-yellow" onclick="window.location.href='banneradd.php'"><span class="icon-plus-square-o"></span> 添加分类</button>
     </div>
