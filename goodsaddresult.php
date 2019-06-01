@@ -17,10 +17,10 @@ echo $db->affected_rows;
 
 if($db->affected_rows===1){
     $msg = "添加成功";
-    $href = "article.php";
+    $href = "goods.php";
 }else{
     $msg = "添加失败";
-    $href = "article.php";
+    $href = "goods.php";
 }
 include "message.php"
 ?>

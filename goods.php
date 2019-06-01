@@ -22,7 +22,7 @@ $data=$r->fetch_all(MYSQLI_ASSOC);//获取数据集
 <div class="panel admin-panel">
     <div class="panel-head"><strong class="icon-reorder"> 菜品列表</strong></div>
     <div class="padding border-bottom">
-        <button type="button" class="button border-yellow" onclick="window.location.href='articleadd.php'"><span class="icon-plus-square-o"></span> 添加商品</button>
+        <button type="button" class="button border-yellow" onclick="window.location.href='goodsadd.php'"><span class="icon-plus-square-o"></span> 添加商品</button>
     </div>
     <table class="table table-hover text-center">
         <tr>
@@ -50,8 +50,8 @@ $data=$r->fetch_all(MYSQLI_ASSOC);//获取数据集
                 <td><?php echo $v['num']?></td>
                 <td><?php echo $v['status']?></td>
                 <td><div class="button-group">
-                        <a class="button border-main" href="articleupdate.php?id=<?php echo $v['id']?>"><span class="icon-edit"></span> 修改</a>
-                        <a class="button border-red" href="articledel.php?id=<?php echo $v['id']?>"><span class="icon-trash-o"></span> 删除</a>
+                        <a class="button border-main" href="goodsupdate.php?id=<?php echo $v['id']?>"><span class="icon-edit"></span> 修改</a>
+                        <a class="button border-red" href="goodsdel.php?id=<?php echo $v['id']?>"><span class="icon-trash-o"></span> 删除</a>
                     </div></td>
             </tr>
         <?php endforeach?>

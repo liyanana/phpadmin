@@ -33,7 +33,7 @@ if(!isset($_SESSION['login'])){
         <li><a href="pass.php" target="right"><span class="icon-caret-right"></span>修改密码</a></li>
         <li><a href="banner.php" target="right"><span class="icon-caret-right"></span>首页轮播</a></li>
         <li><a href="cate.php" target="right"><span class="icon-caret-right"></span>分类管理</a></li>
-        <li><a href="article.php" target="right"><span class="icon-caret-right"></span>菜品管理</a></li>
+        <li><a href="goods.php" target="right"><span class="icon-caret-right"></span>菜品管理</a></li>
         <!-- <li><a href="comment.php" target="right"><span class="icon-caret-right"></span>评论管理</a></li> -->
     </ul>
 </div>

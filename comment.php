@@ -1,6 +1,6 @@
 <?php
 include "dist/db.php";
-$sql="SELECT comment.*,article.title FROM comment,article WHERE comment.aid=article.id";
+$sql="SELECT comment.*,goods.title FROM comment,goods WHERE comment.aid=goods.id";
 $r=$db->query($sql);
 $data=$r->fetch_all(MYSQLI_ASSOC);//获取数据集
 ?>

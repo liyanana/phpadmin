@@ -3,6 +3,7 @@ include "dist/db.php";
 $sql="SELECT DATE_FORMAT(createdAt, '%Y%m%d') days, count(id) count FROM (SELECT * FROM orders WHERE DATE_SUB(CURDATE(), INTERVAL 7 DAY) <= date(createdAt)) AS a GROUP BY days;";
 $r=$db->query($sql);
 $data=$r->fetch_all(MYSQLI_ASSOC);//获取数据集
+
 function get_week($time = '', $format='Y-m-d'){
   $time = $time != '' ? $time : time();
   //获取当前周几
@@ -13,7 +14,8 @@ function get_week($time = '', $format='Y-m-d'){
   }
   return $date;
 };
-$arr=get_week()
+$arr=get_week();
+var_dump($arr);
 ?>
 <!DOCTYPE html>
 <html>
@@ -35,7 +37,7 @@ $arr=get_week()
         title: { text: "近7日订单趋势图" },
         xAxis: {
           type: "category",
-          data: [<?php echo $arr[0]?>]
+          data:<?php echo $arr?>
         },
         yAxis: {
           type: "value"

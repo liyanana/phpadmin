@@ -18,10 +18,10 @@ $r=$db->query($sql);
 echo $db->affected_rows;
 if($db->affected_rows===1){
     $msg = "修改成功";
-    $href = "article.php";
+    $href = "goods.php";
 }else{
     $msg = "修改失败";
-    $href = "article.php";
+    $href = "goods.php";
 }
 include "message.php"
 ?>
